@@ -25,9 +25,10 @@ app.get("/snews", function(req, res) {
 });
 
 app.post("/snews", function(req,res) {
-  input = req.body.text;
+  const input = req.body.text;
+  const sorting = "top";
   console.log(input);
-  const api = `https://newsapi.org/v1/articles?source=${input}&sortBy=top&apiKey=${NEWS_API_KEY}`;
+  const api = `https://newsapi.org/v1/articles?source=${input}&sortBy=${sorting}&apiKey=${NEWS_API_KEY}`;
 
   if(input === "help") {
 
@@ -39,11 +40,11 @@ app.post("/snews", function(req,res) {
     request(api, function(err, resp, body){
         body = JSON.parse(body);
         // console.log(body);
-        source = body.source.toUpperCase();
-        articles = body.articles[0].title;
-        link = body.articles[0].url;
-        description = body.articles[0].description;
-        image = body.articles[0].urlToImage;
+        const source = body.source.toUpperCase();
+        const articles = body.articles[0].title;
+        const link = body.articles[0].url;
+        const description = body.articles[0].description;
+        const image = body.articles[0].urlToImage;
         console.log(source, articles);
 
         slack_message = {
