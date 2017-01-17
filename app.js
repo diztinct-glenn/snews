@@ -60,9 +60,7 @@ app.post("/snews", function(req,res) {
               footer_icon: "http://emojipedia-us.s3.amazonaws.com/cache/a3/dd/a3dd2044fded090033553d2c6a893d82.png"
             }
           ]
-
         }
-
         res.send(slack_message);
     })
   }

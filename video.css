@@ -1,0 +1,16 @@
+video#bgvid {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-30%) translateY(-30%);
+    -moz-transform: translateX(-30%) translateY(-30%);
+    -webkit-transform: translateX(-30%) translateY(-30%);
+    transform: translateX(-30%) translateY(-30%);
+    background: url(./media/Office-Day.jpg) no-repeat;
+    background-size: cover;
+}
