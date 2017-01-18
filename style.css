@@ -13,6 +13,7 @@ body {
 
 #hero {
   height: 100vh;
+  position: relative;
 }
 
 #hero-text {
@@ -27,11 +28,6 @@ body {
   bottom: 3%;
   width: 100%;
   text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
 }
 
 .slack-logo {
@@ -54,8 +50,53 @@ ul {
   color: #fff;
 }
 
+#about {
+  height: 100vh;
+  position: relative;
+}
 
+#about-text {
+  padding-top: 25%;
+}
 
+#about-header {
+  margin: 0;
+  font-size: 40px;
+}
+
+#about-blurb {
+  margin: 50px 0 0;
+  font-size: 25px;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer ul li a:hover {
+  color: #3EB890;
+}
+
+footer li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
 
 
 
