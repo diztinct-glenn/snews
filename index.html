@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>/snews</title>
   <link rel="icon" href="https://techreformation.files.wordpress.com/2015/09/rsz_slack_icon.png">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sources.css">
   <link rel="stylesheet" href="video.css">
 </head>
 <body>
@@ -14,6 +16,69 @@
     <source src="./media/Office-Day.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
     <source src="./media/Office-Day.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
 </video>
-  <h1>/snews</h1>
+  <div id="container">
+    <div id="hero">
+      <h1 id="hero-text">
+        <span class="slack-logo"><i class="fa fa-slack" aria-hidden="true"></i></span> <span class="plus">+</span> <span class="newspaper-logo"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span> <span class="equal">=</span> <span class="snews">/snews</span>
+      </h1>
+      <div id="chevron"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+    </div>
+    <h2>What is /snews?</h2>
+
+    <p>/snews is your one stop shop for all your news needs, all within Slack! Want to see the most recent headlines from CNN? Go ahead and type "/snews cnn" right into your Slack message bar. Do it, I dare ya.</p>
+
+    <h2 id="sources-header">Supported News Sources:</h2>
+    <div id="flex-container">
+      <div class="flex-item" id="ars-technica"></div>
+      <div class="flex-item" id="ap"></div>
+      <div class="flex-item" id="bbc-news"></div>
+      <div class="flex-item" id="bbc-sport"></div>
+      <div class="flex-item" id="bloomberg"></div>
+      <div class="flex-item" id="business-insider"></div>
+      <div class="flex-item" id="buzzfeed"></div>
+      <div class="flex-item" id="cnbc"></div>
+      <div class="flex-item" id="cnn"></div>
+      <div class="flex-item" id="daily-mail"></div>
+      <div class="flex-item" id="engadget"></div>
+      <div class="flex-item" id="entertainment-weekly"></div>
+      <div class="flex-item" id="espn"></div>
+      <div class="flex-item" id="financial-times"></div>
+      <div class="flex-item" id="four-four-two"></div>
+      <div class="flex-item" id="fox-sports"></div>
+      <div class="flex-item" id="google-news"></div>
+      <div class="flex-item" id="hacker-news"></div>
+      <div class="flex-item" id="ign"></div>
+      <div class="flex-item" id="independent"></div>
+      <div class="flex-item" id="mashable"></div>
+      <div class="flex-item" id="metro"></div>
+      <div class="flex-item" id="mirror"></div>
+      <div class="flex-item" id="mtv-news"></div>
+      <div class="flex-item" id="national-geographic"></div>
+      <div class="flex-item" id="new-scientist"></div>
+      <div class="flex-item" id="newsweek"></div>
+      <div class="flex-item" id="new-york-magazine"></div>
+      <div class="flex-item" id="nfl-news"></div>
+      <div class="flex-item" id="polygon"></div>
+      <div class="flex-item" id="recode"></div>
+      <div class="flex-item" id="reddit-r-all"></div>
+      <div class="flex-item" id="reuters"></div>
+      <div class="flex-item" id="sky-news"></div>
+      <div class="flex-item" id="sky-sports-news"></div>
+      <div class="flex-item" id="techcrunch"></div>
+      <div class="flex-item" id="techradar"></div>
+      <div class="flex-item" id="the-economist"></div>
+      <div class="flex-item" id="the-guardian-uk"></div>
+      <div class="flex-item" id="the-huffington-post"></div>
+      <div class="flex-item" id="the-lad-bible"></div>
+      <div class="flex-item" id="the-new-york-times"></div>
+      <div class="flex-item" id="the-next-web"></div>
+      <div class="flex-item" id="the-telegraph"></div>
+      <div class="flex-item" id="the-verge"></div>
+      <div class="flex-item" id="the-wall-street-journal"></div>
+      <div class="flex-item" id="the-washington-post"></div>
+      <div class="flex-item" id="time"></div>
+      <div class="flex-item" id="usa-today"></div>
+    </div>
+  </div>
 </body>
 </html>

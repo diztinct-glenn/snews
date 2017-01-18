@@ -1,5 +1,61 @@
-h1 {
-  margin-top: 150px;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: 'Lato', sans-serif;
   color: whitesmoke;
+  text-align: center;
 }
+
+#container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+#hero {
+  height: 100vh;
+}
+
+#hero-text {
+  vertical-align: middle;
+  line-height: 100vh;
+  font-size: 55px;
+  margin: 0;
+}
+
+#chevron {
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.slack-logo {
+  color: #3EB890;
+}
+
+.plus {
+  color: #70CADB;
+}
+
+.newspaper-logo {
+  color: #E8A723;
+}
+
+.equal {
+  color: #E01765;
+}
+
+.snews {
+  color: #fff;
+}
+
+
+
+
+
+

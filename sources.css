@@ -1,0 +1,285 @@
+#sources-header {
+  margin-bottom: 0;
+  padding: 15px;
+  color: black;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 15px 15px 0 0;
+}
+
+#flex-container {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 0 0 15px 15px;
+  display: -webkit-flex;
+  display: flex;
+/*   -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; */
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+}
+
+.flex-item {
+  /* border: 1px solid black; */
+  width:  150px;
+  height: 150px;
+}
+
+#ars-technica {
+  background: url("http://i.newsapi.org/ars-technica-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#ap {
+  background: url("http://i.newsapi.org/associated-press-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#bbc-news {
+  background: url("http://i.newsapi.org/bbc-news-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#bbc-sport {
+  background: url("http://i.newsapi.org/bbc-sport-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#bloomberg {
+  background: url("http://i.newsapi.org/bloomberg-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#business-insider {
+  background: url("http://i.newsapi.org/business-insider-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#buzzfeed {
+  background: url("http://i.newsapi.org/buzzfeed-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#cnbc {
+  background: url("http://i.newsapi.org/cnbc-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#cnn {
+  background: url("http://i.newsapi.org/cnn-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#daily-mail {
+  background: url("http://i.newsapi.org/daily-mail-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#engadget {
+  background: url("http://i.newsapi.org/engadget-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#entertainment-weekly {
+  background: url("http://i.newsapi.org/entertainment-weekly-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#espn {
+  background: url("http://i.newsapi.org/espn-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#financial-times {
+  background: url("http://i.newsapi.org/financial-times-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#four-four-two {
+  background: url("http://i.newsapi.org/four-four-two-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#fox-sports {
+  background: url("http://i.newsapi.org/fox-sports-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#google-news {
+  background: url("http://i.newsapi.org/google-news-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#hacker-news {
+  background: url("http://i.newsapi.org/hacker-news-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#ign {
+  background: url("http://i.newsapi.org/ign-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#independent {
+  background: url("http://i.newsapi.org/independent-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#mashable {
+  background: url("http://i.newsapi.org/mashable-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#metro {
+  background: url("http://i.newsapi.org/metro-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#mirror {
+  background: url("http://i.newsapi.org/mirror-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#mtv-news {
+  background: url("http://i.newsapi.org/mtv-news-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#national-geographic {
+  background: url("http://i.newsapi.org/national-geographic-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#new-scientist {
+  background: url("http://i.newsapi.org/new-scientist-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#newsweek {
+  background: url("http://i.newsapi.org/newsweek-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#new-york-magazine {
+  background: url("http://i.newsapi.org/new-york-magazine-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#nfl-news {
+  background: url("http://i.newsapi.org/nfl-news-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#polygon {
+  background: url("http://i.newsapi.org/polygon-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#recode {
+  background: url("http://i.newsapi.org/recode-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#reddit-r-all {
+  background: url("http://i.newsapi.org/reddit-r-all-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#reuters {
+  background: url("http://i.newsapi.org/reuters-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#sky-news {
+  background: url("http://i.newsapi.org/sky-news-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#sky-sports-news {
+  background: url("http://i.newsapi.org/sky-sports-news-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#techcrunch {
+  background: url("http://i.newsapi.org/techcrunch-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#techradar {
+  background: url("http://i.newsapi.org/techradar-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-economist {
+  background: url("http://i.newsapi.org/the-economist-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-guardian-uk {
+  background: url("http://i.newsapi.org/the-guardian-uk-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-huffington-post {
+  background: url("http://i.newsapi.org/the-huffington-post-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-lad-bible {
+  background: url("http://i.newsapi.org/the-lad-bible-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-new-york-times {
+  background: url("http://i.newsapi.org/the-new-york-times-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-next-web {
+  background: url("http://i.newsapi.org/the-next-web-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-telegraph {
+  background: url("http://i.newsapi.org/the-telegraph-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-verge {
+  background: url("http://i.newsapi.org/the-verge-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-wall-street-journal {
+  background: url("http://i.newsapi.org/the-wall-street-journal-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#the-washington-post {
+  background: url("http://i.newsapi.org/the-washington-post-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#time {
+  background: url("http://i.newsapi.org/time-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+#usa-today {
+  background: url("http://i.newsapi.org/usa-today-m.png") no-repeat center center;
+  background-size: contain;
+}
+
+
+
+
+
+
+
+
