@@ -5,8 +5,9 @@ const request = require('request');
 const ngrok = require('ngrok');
 
 const PORT = process.env.PORT || 3000;
-const CLIENT_ID = process.env.SLACK_CLIENT_ID;
-const CLIENT_SECRET = process.env.SLACK_CLIENT_SECRET;
+const SLACK_CLIENT_ID = process.env.SLACK_CLIENT_ID;
+const SLACK_CLIENT_SECRET = process.env.SLACK_CLIENT_SECRET;
+const SLACK_VERIFICATION_TOKEN = process.env.SLACK_VERIFICATION_TOKEN;
 const NEWS_API_KEY = process.env.NEWS_API_KEY;
 const news_sources = require('./news_sources');
 
@@ -40,7 +41,7 @@ app.post("/snews", function(req,res) {
        sorting = "latest";
        api = `https://newsapi.org/v1/articles?source=${input}&sortBy=${sorting}&apiKey=${NEWS_API_KEY}`;
        request(api, function(err, resp, body){
-        body = JSON.parse(body);
+        body = JSON.parse(body)
         // console.log(body);
         const source = body.source.toUpperCase();
         const articles_new = body.articles;
@@ -112,3 +113,24 @@ app.post("/snews", function(req,res) {
     })
   }
 });
+
+app.get("/slack", function(req,res) {
+  let data = {
+    form: {
+    client_id: SLACK_CLIENT_ID,
+    client_secret: SLACK_CLIENT_SECRET,
+    code: req.query.code
+  }
+}
+  console.log(req.query.code);
+
+  request.post('https://slack.com/api/oauth.access', data, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      // You are done.
+      // If you want to get team info, you need to get the token here
+      let token = JSON.parse(body).access_token; // Auth token
+      res.redirect('https://6720e852.ngrok.io');
+    }
+  })
+
+})
