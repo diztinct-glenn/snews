@@ -26,14 +26,52 @@ app.get("/snews", function(req, res) {
 
 app.post("/snews", function(req,res) {
   const input = req.body.text;
-  const sorting = "top";
+  let sorting = "top";
   console.log(input);
-  const api = `https://newsapi.org/v1/articles?source=${input}&sortBy=${sorting}&apiKey=${NEWS_API_KEY}`;
+  let api = `https://newsapi.org/v1/articles?source=${input}&sortBy=${sorting}&apiKey=${NEWS_API_KEY}`;
 
   if(input === "help") {
 
     slack_message = news_sources;
     res.send (slack_message);
+
+  } else if(input === "the-next-web") {
+       sorting = "latest";
+       api = `https://newsapi.org/v1/articles?source=${input}&sortBy=${sorting}&apiKey=${NEWS_API_KEY}`;
+       request(api, function(err, resp, body){
+        body = JSON.parse(body);
+        // console.log(body);
+        const source = body.source.toUpperCase();
+        const articles_new = body.articles;
+        // console.log(articles_new)
+
+        let tester_art = articles_new.map(function(element) {
+          let article_title = element.title;
+          let link = element.url;
+          let description = element.description;
+          let image = element.urlToImage
+          return {
+              color: "#ff0000",
+              "mrkdwn_in": ["text"],
+              title: article_title,
+              title_link: link,
+              text: description,
+              thumb_url: image,
+              footer: "/snews",
+              footer_icon: "http://emojipedia-us.s3.amazonaws.com/cache/a3/dd/a3dd2044fded090033553d2c6a893d82.png"
+            }
+        })
+        console.log(tester_art);
+
+        slack_message = {
+          text: `*${source}*`,
+          text_color: "#000000",
+          mrkdwn_in: "text",
+          attachments: tester_art
+        }
+        console.log(slack_message)
+        res.send(slack_message);
+      })
 
   } else {
 
@@ -41,26 +79,34 @@ app.post("/snews", function(req,res) {
         body = JSON.parse(body);
         // console.log(body);
         const source = body.source.toUpperCase();
-        const articles = body.articles[0].title;
-        const link = body.articles[0].url;
-        const description = body.articles[0].description;
-        const image = body.articles[0].urlToImage;
-        console.log(source, articles);
+        const articles_new = body.articles;
+        // console.log(articles_new)
 
-        slack_message = {
-          attachments: [
-            {
+        let tester_art = articles_new.map(function(element) {
+          let article_title = element.title;
+          let link = element.url;
+          let description = element.description;
+          let image = element.urlToImage
+          return {
               color: "#ff0000",
-              pretext: source,
-              title: articles,
+              "mrkdwn_in": ["text"],
+              title: article_title,
               title_link: link,
               text: description,
               thumb_url: image,
-              footer: "snews",
+              footer: "/snews",
               footer_icon: "http://emojipedia-us.s3.amazonaws.com/cache/a3/dd/a3dd2044fded090033553d2c6a893d82.png"
             }
-          ]
+        })
+        console.log(tester_art);
+
+        slack_message = {
+          text: `*${source}*`,
+          text_color: "#000000",
+          mrkdwn_in: "text",
+          attachments: tester_art
         }
+        console.log(slack_message)
         res.send(slack_message);
     })
   }
