@@ -29,11 +29,12 @@ app.post("/snews", function(req,res) {
   let sorting = "top";
   console.log(input);
   let api = `https://newsapi.org/v1/articles?source=${input}&sortBy=${sorting}&apiKey=${NEWS_API_KEY}`;
+  if(input === "something") {
+    res.send("Sorry, I didn't quite catch that. Try using the command [help] to see a list of acceptable commands!")
+  } else if(input === "help") {
 
-  if(input === "help") {
-
-    slack_message = news_sources;
-    res.send (slack_message);
+      slack_message = news_sources;
+      res.send (slack_message);
 
   } else if(input === "the-next-web") {
        sorting = "latest";
@@ -61,7 +62,7 @@ app.post("/snews", function(req,res) {
               footer_icon: "http://emojipedia-us.s3.amazonaws.com/cache/a3/dd/a3dd2044fded090033553d2c6a893d82.png"
             }
         })
-        console.log(tester_art);
+        // console.log(tester_art);
 
         slack_message = {
           text: `*${source}*`,
@@ -69,7 +70,7 @@ app.post("/snews", function(req,res) {
           mrkdwn_in: "text",
           attachments: tester_art
         }
-        console.log(slack_message)
+        // console.log(slack_message)
         res.send(slack_message);
       })
 
@@ -86,7 +87,7 @@ app.post("/snews", function(req,res) {
           let article_title = element.title;
           let link = element.url;
           let description = element.description;
-          let image = element.urlToImage
+          let image = element.urlToImage;
           return {
               color: "#ff0000",
               "mrkdwn_in": ["text"],
@@ -98,7 +99,7 @@ app.post("/snews", function(req,res) {
               footer_icon: "http://emojipedia-us.s3.amazonaws.com/cache/a3/dd/a3dd2044fded090033553d2c6a893d82.png"
             }
         })
-        console.log(tester_art);
+        // console.log(tester_art);
 
         slack_message = {
           text: `*${source}*`,
@@ -106,7 +107,7 @@ app.post("/snews", function(req,res) {
           mrkdwn_in: "text",
           attachments: tester_art
         }
-        console.log(slack_message)
+        // console.log(slack_message)
         res.send(slack_message);
     })
   }
