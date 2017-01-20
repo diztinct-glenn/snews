@@ -129,7 +129,7 @@ app.get("/slack", function(req,res) {
       // You are done.
       // If you want to get team info, you need to get the token here
       let token = JSON.parse(body).access_token; // Auth token
-      res.redirect('https://6720e852.ngrok.io');
+      res.redirect('https://snews-app.herokuapp.com/');
     }
   })
 
