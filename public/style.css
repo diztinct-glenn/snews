@@ -56,7 +56,11 @@ body {
 }
 
 #about-text {
-  padding-top: 25%;
+  padding-top: 15%;
+  margin-bottom: 40px;
+}
+#about-text p {
+  font-size: 25px;
 }
 
 #about-header {
@@ -66,8 +70,8 @@ body {
 
 #about-blurb {
   margin: 50px 0 0;
-  font-size: 25px;
 }
+
 
 footer {
   margin-top: 20px;

@@ -9,12 +9,9 @@
 #flex-container {
   background: rgba(255, 255, 255, 0.75);
   border-radius: 0 0 15px 15px;
+  padding: 20px;
   display: -webkit-flex;
   display: flex;
-/*   -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap; */
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   -webkit-justify-content: space-around;
@@ -28,6 +25,7 @@
 .flex-item {
   width:  150px;
   height: 150px;
+  margin: 20px 3.5px 0;
 }
 
 #ars-technica {
