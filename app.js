@@ -28,6 +28,10 @@ app.post("/snews", function(req,res) {
   const input = req.body.text;
   let sorting = "top";
   let api = `https://newsapi.org/v1/articles?source=${input}&sortBy=${sorting}&apiKey=${NEWS_API_KEY}`;
+
+  // Add below into if statement somehow by looping
+  // news_sources.attachments.fields.value
+
   if(input === "something") {
     res.send("Sorry, I didn't quite catch that. Try using the command [help] to see a list of acceptable commands!")
   } else if(input === "help") {
