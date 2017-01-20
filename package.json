@@ -23,7 +23,6 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "localtunnel": "^1.8.2",
     "mustache-express": "^1.2.4",
     "ngrok": "^2.2.4",
     "nodemon": "^1.11.0",
