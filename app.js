@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const request = require('request');
 const ngrok = require('ngrok');
+const mustacheExpress = require('mustache-express');
 
 const PORT = process.env.PORT || 3000;
 const SLACK_CLIENT_ID = process.env.SLACK_CLIENT_ID;
@@ -11,6 +12,9 @@ const SLACK_VERIFICATION_TOKEN = process.env.SLACK_VERIFICATION_TOKEN;
 const NEWS_API_KEY = process.env.NEWS_API_KEY;
 const news_sources = require('./news_sources');
 
+app.engine('html', mustacheExpress());
+app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
 app.use("/", express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -18,12 +22,8 @@ app.use(bodyParser.json());
 app.listen(PORT, () => console.log(`App is running on ${PORT}.`));
 
 app.get("/", (req, res) =>
-  res.send("hi")
+  res.render("index")
 );
-
-app.get("/snews", function(req, res) {
-  res.send('ngrok test');
-});
 
 app.post("/snews", function(req,res) {
   const input = req.body.text;
