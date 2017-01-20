@@ -63,6 +63,10 @@ body {
   font-size: 25px;
 }
 
+#about-text h2, p {
+  text-shadow: 3px 3px 5px #000;
+}
+
 #about-header {
   margin: 0;
   font-size: 45px;
