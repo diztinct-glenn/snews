@@ -1,4 +1,6 @@
 # /snews
+![alt text](http://i.imgur.com/rwc1YJ7.png "/snews-site screenshot")
+
 A Slack App that gives you the top stories from your favorite sites.
 
 ![alt text](http://i.imgur.com/EALScxE.png "/snews screenshot")
