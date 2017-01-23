@@ -3,9 +3,11 @@
 
 A Slack App that gives you the top stories from your favorite sites.    
 
-Download the app to use with your team on Slack: [/snews](https://snews-app.herokuapp.com/)
+##Download the app to use with your team on Slack: [/snews](https://snews-app.herokuapp.com/)##
 
 ![alt text](http://i.imgur.com/EALScxE.png "/snews screenshot")
+
+/snews is your one stop shop for all your news needs, all within Slack! By using the "slash command" */snews* from within your Slack message bar followed by any of the supported news sources we have, you can view a curated list of the most recent news stories from that source.
 
 ###Technologies Used:###
 * HTML5
