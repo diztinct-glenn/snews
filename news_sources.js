@@ -10,15 +10,18 @@ module.exports = {
       fields: [
         {
             title: "Ars Technica",
-            value: "ars-technica"
+            value: "ars-technica",
+            short: true
         },
         {
             title: "Associated Press",
-            value: "associated-press"
+            value: "associated-press",
+            short: true
         },
         {
             title: "BBC News",
-            value: "bbc-news"
+            value: "bbc-news",
+            short: true
         },
         {
             title: "BBC Sports",
