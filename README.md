@@ -7,7 +7,8 @@ A Slack App that gives you the top stories from your favorite sites.
 
 ![alt text](http://i.imgur.com/EALScxE.png "/snews screenshot")
 
-/snews is your one stop shop for all your news needs, all within Slack! By using the "slash command" */snews* from within your Slack message bar followed by any of the supported news sources we have, you can view a curated list of the most recent news stories from that source.
+###Description:###
+/snews is your one stop shop for all your news needs, all within Slack! By using the "slash command" */snews* from within your Slack message bar followed by any of the supported news sources we have, you can view a curated list of the most recent news stories from that source.g
 
 ###Technologies Used:###
 * HTML5
