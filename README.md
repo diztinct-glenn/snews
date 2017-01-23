@@ -22,3 +22,7 @@ A Slack App that gives you the top stories from your favorite sites.
 * NewsAPI (Link to docs: [newsapi.org](https://newsapi.org/#documentation))
 * Slack Custom Integrations/oAuth (Link to docs: [api.slack.com](https://api.slack.com/))
 
+###Things I haven't gotten around to yet:###
+* Adding an interactive bot feature
+* Cleaning up search functionality
+* Adding more news sources
