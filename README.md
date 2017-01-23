@@ -1,7 +1,9 @@
 # /snews
 ![alt text](http://i.imgur.com/rwc1YJ7.png "/snews-site screenshot")
 
-A Slack App that gives you the top stories from your favorite sites.
+A Slack App that gives you the top stories from your favorite sites.    
+
+Download the app to use with your team on Slack: [/snews](https://snews-app.herokuapp.com/)
 
 ![alt text](http://i.imgur.com/EALScxE.png "/snews screenshot")
 
