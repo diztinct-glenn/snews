@@ -25,187 +25,233 @@ module.exports = {
         },
         {
             title: "BBC Sports",
-            value: "bbc-sports"
+            value: "bbc-sports",
+            short: true
         },
         {
             title: "Bloomberg",
-            value: "bloomberg"
+            value: "bloomberg",
+            short: true
         },
         {
             title: "Business Insider",
-            value: "business-insider"
+            value: "business-insider",
+            short: true
         },
         {
             title: "Buzzfeed",
-            value: "buzzfeed"
+            value: "buzzfeed",
+            short: true
         },
         {
             title: "CNBC",
-            value: "cnbc"
+            value: "cnbc",
+            short: true
         },
         {
             title: "CNN",
-            value: "cnn"
+            value: "cnn",
+            short: true
         },
         {
             title: "Daily News",
-            value: "daily-news"
+            value: "daily-news",
+            short: true
         },
         {
             title: "Engadget",
-            value: "engadget"
+            value: "engadget",
+            short: true
         },
         {
             title: "Entertainment Weekly",
-            value: "entertainment-weekly"
+            value: "entertainment-weekly",
+            short: true
         },
         {
             title: "ESPN",
-            value: "espn"
+            value: "espn",
+            short: true
         },
         {
             title: "Financial Times",
-            value: "financial-times"
+            value: "financial-times",
+            short: true
         },
         {
             title: "FourFourTwo",
-            value: "four-four-two"
+            value: "four-four-two",
+            short: true
         },
         {
             title: "Fox Sports",
-            value: "fox-sports"
+            value: "fox-sports",
+            short: true
         },
         {
             title: "Google News",
-            value: "google-news"
+            value: "google-news",
+            short: true
         },
         {
             title: "Hacker News",
-            value: "hacker-news"
+            value: "hacker-news",
+            short: true
         },
         {
             title: "IGN",
-            value: "ign"
+            value: "ign",
+            short: true
         },
         {
             title: "Independent",
-            value: "independent"
+            value: "independent",
+            short: true
         },
         {
             title: "Mashable",
-            value: "mashable"
+            value: "mashable",
+            short: true
         },
         {
             title: "Metro",
-            value: "metro"
+            value: "metro",
+            short: true
         },
         {
             title: "Mirror",
-            value: "mirror"
+            value: "mirror",
+            short: true
         },
         {
             title: "MTV News",
-            value: "mtv-news"
+            value: "mtv-news",
+            short: true
         },
         {
             title: "National Geographic",
-            value: "national-geographic"
+            value: "national-geographic",
+            short: true
         },
         {
             title: "New Scientist",
-            value: "new-scientist"
+            value: "new-scientist",
+            short: true
         },
         {
             title: "Newsweek",
-            value: "newsweek"
+            value: "newsweek",
+            short: true
         },
         {
             title: "New York Magazine",
-            value: "new-york-magazine"
+            value: "new-york-magazine",
+            short: true
         },
         {
             title: "NFL News",
-            value: "nfl-news"
+            value: "nfl-news",
+            short: true
         },
         {
             title: "Polygon",
-            value: "polygon"
+            value: "polygon",
+            short: true
         },
         {
             title: "Recode",
-            value: "recode"
+            value: "recode",
+            short: true
         },
         {
             title: "Reddit /r/all",
-            value: "reddit-r-all"
+            value: "reddit-r-all",
+            short: true
         },
         {
             title: "Reuters",
-            value: "reuters"
+            value: "reuters",
+            short: true
         },
         {
             title: "Sky News",
-            value: "sky-news"
+            value: "sky-news",
+            short: true
         },
         {
             title: "Sky Sports News",
-            value: "sky-sports-news"
+            value: "sky-sports-news",
+            short: true
         },
         {
             title: "TechCrunch",
-            value: "techcrunch"
+            value: "techcrunch",
+            short: true
         },
         {
             title: "TechRadar",
-            value: "techradar"
+            value: "techradar",
+            short: true
         },
         {
             title: "The Economist",
-            value: "the-economist"
+            value: "the-economist",
+            short: true
         },
         {
             title: "The Guardian (UK)",
-            value: "the-guardian-uk"
+            value: "the-guardian-uk",
+            short: true
         },
         {
             title: "The Huffington Post",
-            value: "the-huffington-post"
+            value: "the-huffington-post",
+            short: true
         },
         {
             title: "The Lad Bible",
-            value: "the-lad-bible"
+            value: "the-lad-bible",
+            short: true
         },
         {
             title: "The New York Times",
-            value: "the-new-york-times"
+            value: "the-new-york-times",
+            short: true
         },
         {
             title: "The Next Web",
-            value: "the-next-web"
+            value: "the-next-web",
+            short: true
         },
         {
             title: "The Telegraph",
-            value: "the-telegraph"
+            value: "the-telegraph",
+            short: true
         },
         {
             title: "The Verge",
-            value: "the-verge"
+            value: "the-verge",
+            short: true
         },
         {
             title: "The Wall Street Journal",
-            value: "the-wall-street-journal"
+            value: "the-wall-street-journal",
+            short: true
         },
         {
             title: "The Washington Post",
-            value: "the-washington-post"
+            value: "the-washington-post",
+            short: true
         },
         {
             title: "Time",
-            value: "time"
+            value: "time",
+            short: true
         },
         {
             title: "USA Today",
-            value: "usa-today"
+            value: "usa-today",
+            short: true
         }
       ]
     }
