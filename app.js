@@ -32,7 +32,7 @@ app.post("/snews", function(req,res) {
   // Add below into if statement somehow by looping
   // news_sources.attachments.fields.value
 
-  if(input === "something") {
+  if(input !== "ars-technica" && input !== "associated-press" && input !== "bbc-news" && input !== "bbc-sports" && input !== "bloomberg" && input !== "business-insider" && input !== "buzzfeed" && input !== "cnbc" && input !== "cnn" && input !== "daily-news" && input !== "engadget" && input !== "entertainment-weekly" && input !== "espn" && input !== "financial-times" && input !== "four-four-two" && input !== "fox-sports" && input !== "google-news" && input !== "hacker-news" && input !== "ign" && input !== "independent" && input !== "mashable" && input !== "metro" && input !== "mirror" && input !== "mtv-news" && input !== "national-geographic" && input !== "new-scientist" && input !== "newsweek" && input !== "new-york-magazine" && input !== "nfl-news" && input !== "polygon" && input !== "recode" && input !== "reddit-r-all" && input !== "reuters" && input !== "sky-news" && input !== "sky-sports-news" && input !== "techcrunch" && input !== "techradar" && input !== "the-economist" && input !== "the-guardian-uk" && input !== "the-huffington-post" && input !== "the-lad-bible" && input !== "the-new-york-times" && input !== "the-next-web" && input !== "the-telegraph" && input !== "the-verge" && input !== "the-wall-street-journal" && input !== "the-washington-post" && input !== "time" && input !== "usa-today" && input !== "help") {
     res.send("Sorry, I didn't quite catch that. Try using the command [help] to see a list of acceptable commands!")
   } else if(input === "help") {
 
