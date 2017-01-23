@@ -2,10 +2,11 @@ module.exports = {
   attachments: [
     {
       color: "#ff0000",
-      pretext: "Here's a list of all supported news sources:",
-      text: "Underneath each source is the correct input to type after the /snews command.",
+      pretext: "*Here's a list of all supported news sources:*",
+      text: "_Underneath each source is the correct input to type after the /snews command._",
       footer: "snews",
       footer_icon: "http://emojipedia-us.s3.amazonaws.com/cache/a3/dd/a3dd2044fded090033553d2c6a893d82.png",
+      "mrkdwn_in": ["pretext", "text"],
       fields: [
         {
             title: "Ars Technica",
