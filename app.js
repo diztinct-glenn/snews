@@ -32,7 +32,7 @@ app.post("/snews", function(req,res) {
   // Add below into if statement somehow by looping
   // news_sources.attachments.fields.value
 
-  if(input === "something") {
+  if(input !== "ars-technica" || "associated-press" || "bbc-news" || "bbc-sports" || "bloomberg" || "business-insider" || "buzzfeed" || "cnbc" || "cnn" || "daily-news" || "engadget" || "entertainment-weekly" || "espn" || "financial-times" || "four-four-two" || "fox-sports" || "google-news" || "hacker-news" || "ign" || "independent" || "mashable" || "metro" || "mirror" || "mtv-news" || "national-geographic" || "new-scientist" || "newsweek" || "new-york-magazine" || "nfl-news" || "polygon" || "recode" || "reddit-r-all" || "reuters" || "sky-news" || "sky-sports-news" || "techcrunch" || "techradar" || "the-economist" || "the-guardian-uk" || "the-huffington-post" || "the-lad-bible" || "the-new-york-times" || "the-next-web" || "the-telegraph" || "the-verge" || "the-wall-street-journal" || "the-washington-post" || "time" || "usa-today" || "help") {
     res.send("Sorry, I didn't quite catch that. Try using the command [help] to see a list of acceptable commands!")
   } else if(input === "help") {
 
